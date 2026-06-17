@@ -8,13 +8,16 @@
     list-style: none;
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #000;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 
 }
 
@@ -298,8 +301,12 @@ main .sobre {
         display: none;
     }
 
+    article img {
+        display: none;
+    }
+
     .section-div {
-        background-image: url(img/pessoa\ ilustrativa.png);
+        background-image: url(imgs/fotoruan.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -492,10 +499,14 @@ main .sobre {
 
 
 .resume_gerenico .experience_content div {
-    animation: ladoSecao .5s ease-in-out forwards;
+    animation: ladoSecao .4s ease-in-out forwards;
     display: none;
     background-color: #222;
     padding: 40px;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 230px;
+    position: relative;
 }
 
 
@@ -528,7 +539,6 @@ main .sobre {
 
 .resume_gerenico .experience_content div.ativo {
     display: block;
-    padding: 40px;
 }
 
 .experience_content ul li.ativo {
@@ -538,10 +548,14 @@ main .sobre {
 /* MEUS DIPROMAS E CURSOS */
 
 .resume_gerenico .education_content div {
-    animation: sobeSecao .5s ease-in-out forwards;
+    animation: ladoSecao .4s ease-in-out forwards;
     display: none;
     background-color: #222;
     padding: 20px;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 230px;
+    position: relative;
 }
 
 .resume_gerenico .education_content ul {
@@ -585,8 +599,7 @@ main .sobre {
 
 .resume_gerenico .education_content div.ativo {
     display: block;
-    padding: 40px;
-    animation: sobeSecao .5s ease-in-out forwards;
+    animation: ladoSecao .4s ease-in-out forwards;
 }
 
 

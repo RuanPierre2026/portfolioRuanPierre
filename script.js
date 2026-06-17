@@ -94,7 +94,7 @@ function sobreMim(){
 
             autoSlide();
 
-        }, 3000);
+        }, 5000);
 
     }
 
