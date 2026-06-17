@@ -309,11 +309,30 @@ main .sobre {
         background-image: url(imgs/fotoruan.png);
         background-repeat: no-repeat;
         background-size: cover;
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .section-div div {
+        margin-top: 40px;
+    }
+
+    .section-div div h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-div div p {
+        font-size: 0.95rem;
     }
 
     header {
         justify-content: space-between;
-        padding: 30px 70px;
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
     }
 
     header .navegacao-primaria {
@@ -351,6 +370,36 @@ main .sobre {
     .sobre_conteudo {
         grid-column: 1/-1;
     }
+
+    main .sobre {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .sobre_conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre_info {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre_titulo h1 {
+        font-size: 1.8rem;
+    }
+
+    .sobre_titulo p {
+        font-size: 1rem;
+    }
+
+    .sobre_texto h1 {
+        font-size: 1.6rem;
+    }
+
+    .sobre_texto p {
+        font-size: 1rem;
+    }
 }
 
 
@@ -386,7 +435,7 @@ main .sobre {
     text-align: center;
     max-width: 300px;
     align-content: center;
-    height: 300px;
+    min-height: 300px;
     background-color: #222;
 }
 
@@ -445,6 +494,29 @@ main .sobre {
     height: 100%;
     border-bottom: 2px solid red;
     border-left: 2px solid red;
+}
+
+@media (max-width: 768px){
+
+    .services{
+        padding: 20px;
+    }
+
+    .my_services{
+        padding: 20px;
+    }
+
+    .my_services ul li{
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .my_services ul li h3{
+        word-break: break-word;
+    }
+
 }
 
 
@@ -771,6 +843,54 @@ main .sobre {
     }
 }
 
+@media (max-width: 768px) {
+    .resume_gerenico {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .resume_gerenico .experience_content div,
+    .resume_gerenico .education_content div {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .funfacts ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .funfacts ul li {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 70px;
+        overflow: hidden;
+    }
+
+    .funfacts ul li i {
+        padding: 12px;
+        font-size: 1.4rem;
+    }
+
+    .funfacts ul li span {
+        font-size: 1.1rem;
+        padding-top: 8px;
+    }
+
+    .funfacts ul li p {
+        font-size: 0.75rem;
+    }
+
+    .cursos {
+        padding: 15px;
+    }
+
+    .skill_content {
+        gap: 20px;
+    }
+}
+
 
 /* PROJECTS */
 
@@ -841,7 +961,31 @@ main .sobre {
     color: #707070;
     border: 1px solid #333;
 }
+@media (max-width: 992px){
+    .projects_armazenamento ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    .projects ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .projects {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 600px){
+    .projects_armazenamento ul{
+        grid-template-columns: 1fr;
+    }
+
+    .project_models ul li {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+}
 
 @keyframes animationButton {
     0% {
@@ -905,4 +1049,24 @@ footer .footer_comercial {
     font-size: 1.5rem;
     margin: 90px 0;
     font-family: 'Poppins';
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 15px;
+    }
+
+    .footer_sociais li i {
+        padding: 18px;
+        font-size: 1.2rem;
+    }
+
+    footer .footer_comercial {
+        font-size: 1rem;
+        margin: 50px 0 30px;
+    }
+
+    .footer_sociais {
+        gap: 15px;
+    }
 }
